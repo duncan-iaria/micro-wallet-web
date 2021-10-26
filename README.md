@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# Micro Wallet Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="300" src="src/portfolio.png" />
 
-## Available Scripts
+## About the Repo
 
-In the project directory, you can run:
+This is a React.js technical challenge. It's a very simple, bootstrapped React app and lightweight (fake) back-end. This app is meant to approximate what the real app is like (in tech stack, code, and functionality), but it's boiled down to only the essentials.
 
-### `npm start`
+It uses:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Typescript
+1. React.js
+1. Create React App
+1. react-router-dom
+1. [json-graphql-server](https://github.com/marmelab/json-graphql-server) for the back-end, database, and GraphQL
+1. [Apollo Client](https://www.apollographql.com/docs/react/) (React client for GraphQL requests)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. [Import this repo to your Github account](https://github.com/new/import) **IMPORTANT: Select "Private", not "Public"**
+1. Clone your repo locally and `cd` into it
+1. Run `yarn` or `npm i`
+1. Open a couple of terminal windows.
+   1. In the first, run `yarn serve`. This runs the back-end server, which generates routes and mutations from `db.js`.
+   1. In the second, run `yarn start`. Your app will load up at http://localhost:3000.
+1. You should now be presented with a very basic app with a portfolio of some holdings of various types.
+1. Open the GraphiQL environment for your local server: http://localhost:3005/graphql. You can try queries against the back-end here, with autocomplete. Use this as the source of all back-end data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## The Challenge
 
-### `npm run build`
+This challenge is intended to take about one hour.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Improve the portfolio page:
+   1. Display all holdings BY CATEGORY, such that each category has its respective holdings' information displayed nicely.
+   1. Format all numbers and strings appropriately (denominations, currency symbols, thousands delineation, etc)
+   1. Add a pie chart of the holdings
+   1. Add refresh button for updated holdings on the Portfolio page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## What’s important
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We will evaluate your submission on:
 
-### `npm run eject`
+1. Fulfillment of requirements and functionality (as limited by time taken)
+1. Code quality (is this code mergeable as-is, or would the PR be rejected?)
+1. Usable UI & navigation (no need for high polish)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Final Product
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Push up your repo/branch to Github and give **read** access to the users provided by your recruiter.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+In this README (below), please include:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Your goal and primary focus
+- The amount of time you took
+- Any assumptions and/or constraints you came up with while working through this challenge
+- What you would change or add if you had more time
+- A screen recording or screenshots of your app
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
